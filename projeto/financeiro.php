@@ -61,7 +61,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
-                <a href="boleto.html" target="_blank" class="fas fa-eye"></a>
+                <a href="boleto.php" target="_blank" class="fas fa-eye"></a>
             </div>
             <div class="image">
                 <img src="images/fatura-2.png" alt="">
@@ -82,7 +82,7 @@
             <div class="icons">
               <!--  <a href="#" class="fas fa-shopping-cart"></a>  -->
                 <a href="#" class="fas fa-heart"></a>
-                <a href="boleto.html" target="_blank" class="fas fa-eye"></a>
+                <a href="boleto.php" target="_blank" class="fas fa-eye"></a>
             </div>
             <div class="image">
                 <img src="images/fatura-2.png" alt="">
@@ -101,7 +101,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
-                <a href="boleto.html" target="_blank" class="fas fa-eye"></a>
+                <a href="boleto.php" target="_blank" class="fas fa-eye"></a>
             </div>
             <div class="image">
                 <img src="images/fatura-2.png" alt="">
@@ -120,7 +120,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
-                <a href="boleto.html" target="_blank" class="fas fa-eye"></a>
+                <a href="boleto.php" target="_blank" class="fas fa-eye"></a>
             </div>
             <div class="image">
                 <img src="images/fatura-2.png" alt="">
@@ -139,7 +139,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
-                <a href="boleto.html" target="_blank" class="fas fa-eye"></a>
+                <a href="boleto.php" target="_blank" class="fas fa-eye"></a>
             </div>
             <div class="image">
                 <img src="images/fatura-2.png" alt="">
@@ -158,7 +158,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
-                <a href="boleto.html" target="_blank" class="fas fa-eye"></a>
+                <a href="boleto.php" target="_blank" class="fas fa-eye"></a>
             </div>
             <div class="image">
                 <img src="images/fatura-2.png" alt="">

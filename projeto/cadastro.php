@@ -66,7 +66,7 @@
                 <input type="number" placeholder="TELEFONE">
             </div>
             <input type="submit" value="Entrar" class="btn">
-            <button><a href="suporte.html"class="btn">Retornar a Tela de Login</a> </a></button>
+            <button><a href="suporte.php"class="btn">Retornar a Tela de Login</a> </a></button>
 
     </div>
 

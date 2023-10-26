@@ -126,7 +126,7 @@
                 <input type="password" placeholder="SENHA">
             </div>
             <input type="submit" value="Entrar" class="btn">
-            <a href="cadastro.html" class="btn">Clique Aqui Caso não tenha Cadastro</a>
+            <a href="cadastro.php" class="btn">Clique Aqui Caso não tenha Cadastro</a>
         </form>
 
     </div>
