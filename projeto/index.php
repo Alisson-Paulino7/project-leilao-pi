@@ -213,7 +213,7 @@
             <input type="password" placeholder="SENHA">
         </div>
         <input type="submit" value="Entrar" class="btn">
-        <a href="cadastro.html" class="btn">Clique Aqui Caso não tenha Cadastro</a>
+        <a href="cadastro.php" class="btn">Clique Aqui Caso não tenha Cadastro</a>
     </form>
 
     </div>
@@ -233,11 +233,11 @@
                 <img src="images/blog-1.jpeg" alt="">
             </div>
             <div class="content">
-                <a href="suporte.html" class="title">Suporte Técnico</a>
+                <a href="suporte.php" class="title">Suporte Técnico</a>
                 <span>Solicite aqui o Suporte</span>
                 <p>Solicite aqui o suporte ou reinicie o roteador para tentar sozinho!</p>
                 <p> </p>   
-                <button><a href="suporte.html"class="btn">Suporte</a> </a></button>
+                <button><a href="suporte.php"class="btn">Suporte</a> </a></button>
             </div>
         </div>
 
@@ -246,11 +246,11 @@
                 <img src="images/blog-2.jpeg" alt="">
             </div>
             <div class="content">
-                <a href="financeiro.html" class="title">Financeiro</a>
+                <a href="financeiro.php" class="title">Financeiro</a>
                 <span>Acesse suas faturas</span>
                 <p>Tenha o controle financeiro e não nos faça perder tempo cancelando seus beneficios!</p>
                 <p> </p>   
-                <button><a href="financeiro.html"  class="btn">Faturas</a> </a></button>
+                <button><a href="financeiro.php"  class="btn">Faturas</a> </a></button>
             </div>
         </div>
 

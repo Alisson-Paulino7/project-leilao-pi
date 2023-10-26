@@ -1,0 +1,73 @@
+# version: "3"
+
+# services:
+#   backend:
+#     build: ./backend
+#     container_name: api
+#     environment:
+#       - PORT=3000
+#       - DATABASE_URL=postgresql://root:root@postgresql-master:5432/travel_planning
+#     volumes:
+#       - ./backend:/var/www
+#     depends_on:
+#       - db
+#       - postgresql-master
+#     ports:
+#       - 8000:8000
+
+#   frontend:
+
+# services:
+#   web:
+#     build: ./backend
+#     ports:
+#       - "8000:8080"
+#     volumes:
+#       - ./backend:/var/www/backend
+
+# -----------------------------------------------------------------------------------------
+
+# services:
+#   web:
+#     build: ./backend
+#     ports:
+#       - "8000:8000"
+# volumes:
+#   - ./backend:/var/www/backend
+#------------------------------------------------------
+
+version: "3"
+services:
+  db:
+    image: postgres:latest
+    container_name: db-postgres
+    environment:
+      # POSTGRES_DB: laravel
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5432:5432"
+    networks:
+      - netmain
+
+  laravel:
+    image: php:8.1-fpm
+    container_name: backend
+    working_dir: /var/www/backend
+    volumes:
+      - ./backend:/var/www/backend
+    # command: sh -c "chmod -R 775 storage && php artisan serve --host=0.0.0.0"
+    entrypoint: ["php", "artisan"]
+    command: ["serve", "--host=0.0.0.0"]
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      - netmain
+
+# volumes:
+#   postgres_data:
+
+networks:
+  netmain:
