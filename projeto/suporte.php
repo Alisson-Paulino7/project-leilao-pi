@@ -13,12 +13,12 @@
     
 <header class="header">
 
-    <a href="#" class="logo">
+    <a href="index.php" class="logo">
         <img src="images/logo.png" alt="">
     </a>
 
     <nav class="navbar">
-        <a href="#home">home</a>
+        <a href="index.php">home</a>
         <a href="#review">review</a>
         <a href="#contato">contato</a>
         
