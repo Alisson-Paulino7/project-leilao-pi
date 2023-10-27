@@ -3,7 +3,7 @@
     "description": "Sistema de leilão de bens materiais",
     "type": "project",
     "require": {
-        "php": ">=8.2.0",
+        "php": ">=8.1.4",
         "monolog/monolog": "^2.0"
     },
     "autoload": {
