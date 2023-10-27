@@ -1,0 +1,12 @@
+name: PHP depends
+
+on: [push, pull_request]
+
+jobs:
+  check-depends:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: php-ga.composer-require-checker
+      uses: php-ga/composer-require-checker-ga@v1.0.0
+            
