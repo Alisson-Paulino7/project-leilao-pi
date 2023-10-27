@@ -8,6 +8,6 @@ jobs:
               - name: pipeline-components-php-security-checker
                 uses: pipeline-components/php-security-checker@v0.10.4
                 with:
-                    lockFile: './projeto/composer.lock'
+                    lockFile: ./projeto
             
             
