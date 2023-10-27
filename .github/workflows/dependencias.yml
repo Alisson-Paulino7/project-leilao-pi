@@ -5,9 +5,15 @@ jobs:
         name: components security
         runs-on: ubuntu-latest
         steps:
-              - name: pipeline-components-php-security-checker
-                uses: pipeline-components/php-security-checker@v0.10.4
+              - name: aozora0000/local-php-security-checker
+                uses: aozora0000/local-php-security-checker-action@v1
                 with:
-                    lockFile: './projeto'
+                    lockFile: './projeto/composer.lock'            
+
+        
+     #         - name: pipeline-components-php-security-checker
+      #          uses: pipeline-components/php-security-checker@v0.10.4
+       #         with:
+        #            lockFile: './projeto'
             
             
