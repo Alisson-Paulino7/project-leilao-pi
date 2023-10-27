@@ -1,12 +1,1 @@
-on: [push, pull_request]
-name: verificar compartibilidade
-jobs:
-  exakat:
-    name: Compabitibility PHP 8.0 with Exakat
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Exakat
-      uses: docker://exakat/exakat-ga-compatibility-php-80
-
-#Verificação de dependências instaladas são compatíveis com arquivos
+.
