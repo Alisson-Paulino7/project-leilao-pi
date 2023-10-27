@@ -5,7 +5,7 @@ jobs:
         name: components security
         runs-on: ubuntu-latest
         steps:
-              - name: aozora0000/local-php-security-checker --path=/composer.lock
+              - name: aozora0000/local-php-security-checker --format=json
                 uses: aozora0000/local-php-security-checker-action@v1
                # with:
                 #    lockFile: "./composer.lock"
