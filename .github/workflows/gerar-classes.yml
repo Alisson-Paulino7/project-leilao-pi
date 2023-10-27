@@ -25,7 +25,7 @@ jobs:
       - name: Generate PHP project classes list file
         uses: impresscms-dev/generate-php-project-classes-list-file-action@v1.0.0
         with:
-          output_file: ./php-classes.lst
+          output_file: ./projeto/php-classes.lst
           
       - uses: actions/upload-artifact@v3
         with:
