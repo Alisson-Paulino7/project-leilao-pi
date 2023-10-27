@@ -1,12 +1,11 @@
 on: [push, pull_request]
-name: Test
+name: components security
 jobs:
     roave_bc_check:
-        name: Roave BC Check
+        name: components security
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-
-            - name: roave-bc-check-phpstan
-              uses: Nyholm/roave-bc-check-docker@0.1.0
+              - name: pipeline-components-php-security-checker
+                uses: pipeline-components/php-security-checker@v0.10.4
+            
             
