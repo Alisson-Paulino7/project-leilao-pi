@@ -1,4 +1,4 @@
-name: PHP Magic Number
+name: PHP Psecio Security
 
 on: [push, pull_request]
 
