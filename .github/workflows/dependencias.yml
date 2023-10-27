@@ -8,7 +8,7 @@ jobs:
               - name: aozora0000/local-php-security-checker
                 uses: aozora0000/local-php-security-checker-action@v1
                 with:
-                    lockFile: ./projeto          
+                    lockFile: ./projeto/
 
         
      #         - name: pipeline-components-php-security-checker
