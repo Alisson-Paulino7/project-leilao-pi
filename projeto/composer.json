@@ -1,9 +1,0 @@
-{
-    "name": "alisson/leilao",
-    "description": "leilao de bens e propriedades através de leilao online",
-    "type": "project",
-    "require": {
-        "php": "^8.2",
-        "monolog/monolog": "^2.0"
-    }
-}
