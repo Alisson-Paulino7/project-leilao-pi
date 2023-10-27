@@ -3,7 +3,7 @@
         'name' => 'pi/leilao-cariri',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '2584270d798b1fae1a6e71b248024557ff586a6c',
+        'reference' => '87dfae1c4ce32bc3e0808613c2ff8e9a02a196f9',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'pi/leilao-cariri' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '2584270d798b1fae1a6e71b248024557ff586a6c',
+            'reference' => '87dfae1c4ce32bc3e0808613c2ff8e9a02a196f9',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
