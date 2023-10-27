@@ -1,4 +1,4 @@
-name: Generate PHP project class list as artifact
+name: Generate PHP class
 
 on:
   push:
@@ -31,3 +31,5 @@ jobs:
         with:
           name: my-artifact
           path: ./php-classes.lst
+
+# Ação do GitHub para gerar um arquivo com a lista de classes do projeto PHP
