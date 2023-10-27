@@ -1,19 +1,33 @@
-on: [push, pull_request]
-name: components security
+name: Generate PHP project class list as artifact
+
+on:
+  push:
+
 jobs:
-    roave_bc_check:
-        name: components security
-        runs-on: ubuntu-latest
-        steps:
-              - name: aozora0000/local-php-security-checker --format=json
-                uses: aozora0000/local-php-security-checker-action@v1 --format=json
-               # with:
-                #    lockFile: "./composer.lock"
-#local-php-security-checker --path=/path/to/php/project/composer.lock
+  get_php_classes_list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkouting project code...
+        uses: actions/checkout@v2
         
-     #         - name: pipeline-components-php-security-checker
-      #          uses: pipeline-components/php-security-checker@v0.10.4
-       #         with:
-        #            lockFile: './projeto'
-            
-            
+      - name: Install PHP
+        uses: shivammathur/setup-php@master
+        with:
+          php-version: 8.1
+          extensions: curl, gd, pdo_mysql, json, mbstring, pcre, session
+          ini-values: post_max_size=256M
+          coverage: none
+          tools: composer:v2
+          
+      - name: Install Composer dependencies (with dev)
+        run: composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+        
+      - name: Getting PHP classes list...
+        uses: impresscms-dev/generate-php-project-classes-list-file-action@v1
+        with:
+          output_file: ./php-classes.lst
+          
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: ./php-classes.lst
