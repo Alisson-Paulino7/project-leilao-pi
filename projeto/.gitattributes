@@ -1,2 +1,2 @@
 $ cat .gitattributes
-*.Hack linguist-language=PHP
+*.hack linguist-language=PHP
